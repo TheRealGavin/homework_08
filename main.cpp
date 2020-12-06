@@ -24,7 +24,7 @@ int main() {
   print_array(array, kSize);
 
   // Prompt user for number to be passed through count_numbers function
-  std::cout << "\nWhat number do you want to search for? " << std::endl;
+  std::cout << "\nWhat number do you want to search for? ";
   int search_number;
   std::cin >> search_number;
 
@@ -32,7 +32,7 @@ int main() {
   // While passing through it the array, it's size, and the user inputted number
   int count = count_numbers(array,kSize,search_number);
   // Output count integer and coordinates of user inputted number via count_numbers function
-  std::cout << "Your number appears " << count
+  std::cout << "\nYour number appeared " << count
             << " times in the array" << std::endl;
 
 }
